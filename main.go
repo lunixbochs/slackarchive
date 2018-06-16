@@ -10,8 +10,8 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	slackarchiveapi "github.com/dutchcoders/slackarchive/api"
-	config "github.com/dutchcoders/slackarchive/config"
+	slackarchiveapi "github.com/lunixbochs/slackarchive/api"
+	config "github.com/lunixbochs/slackarchive/config"
 )
 
 func init() {

@@ -24,11 +24,11 @@ import (
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	config "github.com/dutchcoders/slackarchive/config"
-	models "github.com/dutchcoders/slackarchive/models"
-	utils "github.com/dutchcoders/slackarchive/utils"
+	config "github.com/lunixbochs/slackarchive/config"
+	models "github.com/lunixbochs/slackarchive/models"
+	utils "github.com/lunixbochs/slackarchive/utils"
 
-	handlers "github.com/dutchcoders/slackarchive/api/handlers"
+	handlers "github.com/lunixbochs/slackarchive/api/handlers"
 
 	elastic "gopkg.in/olivere/elastic.v5"
 
