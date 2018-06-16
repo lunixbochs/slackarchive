@@ -309,6 +309,9 @@ func (api *api) usersHandler(ctx *Context) error {
 		if err := utils.Merge(&usr, user); err != nil {
 			log.Error(err.Error())
 		}
+		if usr.Profile.RealName != "" {
+			usr.Name = usr.Profile.RealName
+		}
 
 		response.Users = append(response.Users, usr)
 	}
@@ -856,6 +859,9 @@ func (api *api) messagesHandler(ctx *Context) error {
 		usr := UserResponse{}
 		if err := utils.Merge(&usr, user); err != nil {
 			log.Error(err.Error())
+		}
+		if usr.Profile.RealName != "" {
+			usr.Name = usr.Profile.RealName
 		}
 
 		response.Related.Users[user.ID] = usr
